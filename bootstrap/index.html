@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!--🔘 we can you direct CSS command in inline inside the Bootstrap 
+                 Like: justify-content-center, align-item-center,etc. inside the class="row"  -->
+                <div class="col-sm-6 py-5" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJqPIYxCEas8gAGFSOQewmMZiUojVnrYtWRRfyEWU2aiDgPmdn6A2pDPqq435Gr5mlQsg" alt="img1" class="img-fluid">
+                </div>   
+                <!-- 🖼️ for image responsive use class="img-fluid" -->
+                <div class="col-sm-6">
+                    <h1>About</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eius est, veniam ea hic mollitia odio beatae voluptate, officiis perspiciatis velit iusto dignissimos laboriosam enim? Tempora reprehenderit nulla atque quasi.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="text-center">hello</div>
+    <div class="container-xxl bg-danger">welcome</div>
+    <!--
+    ⚪1.container-xxl is used to create a full-width container that spans the entire width of the viewport, regardless of the screen size of 1320px.
+    2.container-fluid is used to create a full-width container that spans the entire width of the viewport, regardless of the screen size more than 1400px.
+    3. Bootstrap work on 12 columns grid system, which means that the container is divided into 12 equal columns.
+    4.12 colums 12 classes
+    5.Column doesn't directly used they used row classes for division of columns.
+    6 Inside row flex is used 
+    -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3" col-sm-6  style="background-color: aqua;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum laborum animi aliquam possimus velit sint dolor, soluta at sequi reiciendis quos nisi voluptatum cupiditate cumque eum mollitia maiores porro quas?</div>
+        <div class="col-lg-3" col-sm-6  style="background-color: aquamarine;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum laborum animi aliquam possimus velit sint dolor, soluta at sequi reiciendis quos nisi voluptatum cupiditate cumque eum mollitia maiores porro quas?</div>
+        <div class="col-lg-3" col-sm-6  style="background-color: antiquewhite;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum laborum animi aliquam possimus velit sint dolor, soluta at sequi reiciendis quos nisi voluptatum cupiditate cumque eum mollitia maiores porro quas?</div>
+        <div class="col-lg-3" col-sm-6  style="background-color: rgb(245, 172, 172);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum laborum animi aliquam possimus velit sint dolor, soluta at sequi reiciendis quos nisi voluptatum cupiditate cumque eum mollitia maiores porro quas?</div>
+        <!--
+        ⚪Gutter is the space between columns in Bootstrap's grid system. It is used to create a gap between the columns, which helps to improve the readability and aesthetics of the layout.
+        gx-1 is used to set the 2px padding from left and right side of the column.
+        gy-1 is used to set the 2px padding from top and bottom side of the column.
+        gx/gy-1 is for 2px, gx/gy-2 is for 4px, gx/gy-3 is for 8px, gx/gy-4 is for 16px, gx/gy-5 is for 32px.
+
+
+        ⚪Margin    : Margin is represented by "m" in Bootstrap, and it is used to create space outside the element. 
+          It can be applied to all sides of the element (top, right, bottom, left).
+        my-> is represented margin from -> top to bottom
+        mx-> is represented margin from -> left to right
+        mt-> is represented margin from -> top
+        mr- is represented margin from - right
+        mb-> is represented margin from ->bottom
+        ml-> is represented margin -> left
+        ms-> is represented margin from -> start
+
+        there are 5 classes for margin in bootstrap
+        m-0, m-1, m-2, m-3, m-4, m-5  work on rem   1rem=16px
+        where m-0 is for 0px margin,
+        m-1 is for 0.25rem (4px) margin,
+        m-2 is for 0.5rem (8px) margin,
+        m-3 is for 1rem (16px) margin,
+        m-4 is for 1.5rem (24px) margin,
+        m-5 is for 3rem (48px) margin.    
+         
+    -> Same as for all margin classes-> mt, mr, mb, ml, ms, mx, my
+
+    ->  mx-auto is used to center from every side of the column.
+
+    -> Margin has screen orientation classes.
+    -> You can also give screen oriented margin classes like mt-sm-0, mt-md-1, mt-lg-2, mt-xl-3, mt-xxl-4,etc.
+     
+    ⚪ Padding
+        Gap inside the box is called padding.
+        Padding is represented by "p" in Bootstrap, and it is used to create space inside
+        p-> for all directions
+        py-> for top and bottom
+        px-> for left and right
+        pt-> for top
+        pr-> for right
+        pb-> for bottom
+        pl-> for left
+        ps-> for start
+
+        p-1 is for 0.25rem (4px) margin,
+        p-2 is for 0.5rem (8px) margin,
+        p-3 is for 1rem (16px) margin,
+        p-4 is for 1.5rem (24px) margin,
+        p-5 is for 3rem (48px) margin. 
+-> You can also give screen oriented padding classes like pt-sm-0, pt-md-1, pt-lg-2, pt-xl-3, pt-xxl-4,etc.
+        
+-> use class="p-4" etc for use the padding
+
+
+-->
+    </div>
+</div>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"   ></script>
+</html>

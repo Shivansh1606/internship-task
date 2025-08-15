@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task-01</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Application Form</h1>
+  <h3>Complete the form carefully.</h3>
+  <form action="#">
+    <fieldset class="field1">
+      <legend>Personal Information</legend>
+
+      <label for="fullname">Full Name</label>
+      <input type="text" name="fullname" id="fullname" maxlength="60" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your Email address" required />
+
+      <label for="pass">Password</label>
+      <input type="password" name="pass" id="pass" required />
+
+      <label for="mobilenumber">Contact Number</label>
+      <input type="tel" name="mobilenumber" id="mobilenumber" required placeholder="+91-98765-43210" />
+
+      <label for="dob">Date-of-Birth</label>
+      <input type="date" name="dob" id="dob" required />
+
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" required min="18" max="45" />
+
+      <label>Gender</label>
+      <div class="gen">
+        <div class="option">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" />
+        </div>
+        <div class="option">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" />
+        </div>
+        <div class="option">
+          <label for="others">Others</label>
+          <input type="radio" name="gender" id="others" />
+        </div>
+      </div>
+
+      <label for="city">City</label>
+      <input type="text" name="city" id="city" required />
+
+      <label for="states">State</label>
+      <select id="states" name="states">
+        <option>Select state</option>
+        <option value="MH">Maharashtra</option>
+        <option value="DL">Delhi</option>
+        <option value="KA">Karnataka</option>
+        <!-- Add more states as needed -->
+      </select>
+
+      <label for="country">Country</label>
+      <select name="country" id="country" required>
+        <option value="">Select your Country</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+      </select>
+    </fieldset>
+
+    <fieldset class="field2">
+      <legend>Preferences</legend>
+
+      <label for="hobbies">Hobbies</label>
+      <div class="hob">
+        <div class="option">
+          <label for="hobby1">Cricket</label>
+          <input type="checkbox" id="hobby1" name="hobbies" />
+        </div>
+        <div class="option">
+          <label for="hobby2">Football</label>
+          <input type="checkbox" id="hobby2" name="hobbies" />
+        </div>
+        <div class="option">
+          <label for="hobby3">Reading</label>
+          <input type="checkbox" id="hobby3" name="hobbies" />
+        </div>
+        <div class="option">
+          <label for="hobby4">Crafting</label>
+          <input type="checkbox" id="hobby4" name="hobbies" />
+        </div>
+      </div>
+
+      <label for="otherhb">Other Hobbies</label>
+      <input type="text" name="otherhb" id="otherhb" placeholder="Other Hobbies" />
+
+      <label for="fav">Fav Colour</label>
+      <input type="color" name="fav" id="fav" />
+    </fieldset>
+
+    <fieldset class="field3">
+      <legend>Social Links</legend>
+
+      <label for="web">Portfolio URL:</label>
+      <input type="url" name="web" id="web" required />
+
+      <label for="linkedin">LinkedIn:</label>
+      <input type="url" name="linkedin" id="linkedin" required />
+
+      <label for="github">GitHub:</label>
+      <input type="url" name="github" id="github" required />
+
+      <label for="resume">Upload Resume</label>
+      <input type="file" name="resume" id="resume" required />
+    </fieldset>
+
+    <fieldset class="field4">
+      <legend>Other Information</legend>
+
+      <label for="exp">Experience Level</label>
+      <input type="range" name="exp" id="exp" min="1" max="25" />
+
+      <label for="skill">Skills</label>
+      <input type="text" name="skill" id="skill" required />
+
+      <label for="adt">Appointment DateTime</label>
+      <input type="datetime-local" name="adt" id="adt" />
+
+      <label for="toc">Time to Contact</label>
+      <input type="time" name="toc" id="toc" />
+
+      <label for="cmnt">Comments</label>
+      <input type="text" name="cmnt" id="cmnt" placeholder="Enter your comments here..." />
+    </fieldset>
+
+    <label class="terms">
+      I agree to the Terms and Conditions
+      <input type="checkbox" id="terms" name="terms" required />
+      <sub><a href="condition.html">here</a></sub>
+    </label>
+
+    <div class="formaction">
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
+</body>
+</html>

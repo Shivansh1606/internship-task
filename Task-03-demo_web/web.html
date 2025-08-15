@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrainBridge Blog</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="webstyle.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- Logo -->
+    <div class="logo" id="logoScroll" role="button" aria-label="Scroll to Recent Posts">
+      <h1 class="logo-text"><span>Brain</span>Bridge</h1>
+    </div>
+
+    <!-- Menu Toggle Icon (optional for mobile) -->
+    <i class="fa fa-bars menu-toggle" aria-label="Toggle Menu"></i>
+
+    <!-- Navigation -->
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Sign-up</a></li>
+      <li><a href="#">Log-in</a></li>
+      <li>
+        <a href="#">
+          <i class="fa fa-user"></i> Help
+          <i class="fa fa-chevron-down" style="font-size:.8rem;"></i>
+        </a>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Enquiry</a></li>
+          <li><a href="#" class="logout">Log-out</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!-- PAGE WRAPPER -->
+  <div class="page-wrapper">
+    <!-- POST SLIDER -->
+    <div class="post-slider">
+      <h1 class="slider-title">Trending Posts</h1>
+      <div class="post-wrapper">
+        <!-- Slider posts -->
+        <div class="post">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="AI chip" class="slider-image">
+          <div class="post-info">
+            <h4><a href="single.html">The AI Hardware Boom: What’s Powering Next-Gen Models</a></h4>
+            <i class="far fa-user"> Aria</i>&nbsp;<i class="far fa-calendar"> 04/12/2025</i>
+          </div>
+        </div>
+        <div class="post">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="City fintech" class="slider-image">
+          <div class="post-info">
+            <h4><a href="single.html">Fintech Trends: Real-Time Payments and Open Banking</a></h4>
+            <i class="far fa-user"> Dev</i>&nbsp;<i class="far fa-calendar"> 03/22/2025</i>
+          </div>
+        </div>
+        <div class="post">
+          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200&auto=format&fit=crop" alt="Cybersecurity" class="slider-image">
+          <div class="post-info">
+            <h4><a href="single.html">Zero Trust in Practice: Securing a Hybrid Workforce</a></h4>
+            <i class="far fa-user"> Nia</i>&nbsp;<i class="far fa-calendar"> 02/28/2025</i>
+          </div>
+        </div>
+        <div class="post">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop" alt="Green energy" class="slider-image">
+          <div class="post-info">
+            <h4><a href="single.html">Renewables in 2025: Storage Breakthroughs to Watch</a></h4>
+            <i class="far fa-user"> Kai</i>&nbsp;<i class="far fa-calendar"> 01/19/2025</i>
+          </div>
+        </div>
+        <div class="post">
+          <img src="https://images.unsplash.com/photo-1573167243872-43c6433b9d40?q=80&w=1200&auto=format&fit=crop" alt="Team collaboration" class="slider-image">
+          <div class="post-info">
+            <h4><a href="single.html">Productivity Engineering: Teams, Tools, and Metrics</a></h4>
+            <i class="far fa-user"> Noor</i>&nbsp;<i class="far fa-calendar"> 12/12/2024</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT WITH SIDEBAR -->
+  <div class="content clearfix">
+    <div class="layout">
+      <!-- Left: Main content -->
+      <main class="main-content" id="recent-posts">
+        <h1 class="recent-post-title">Recent Post</h1>
+
+        <article class="post">
+          <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop" alt="Startup team" class="post-image">
+          <div class="post-info">
+            <h2><a href="single.html">Bootstrapping to Break Even: A 12-Month Playbook</a></h2>
+            <i class="far fa-user"> Hello</i>&nbsp;<i class="far fa-calendar"> 08/05/2025</i>
+            <p class="preview-text">From scrappy MVPs to sustainable revenue, here’s a simple framework for early-stage founders who value focus over fluff.</p>
+            <a href="single.html" class="btn read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop" alt="Cloud servers" class="post-image">
+          <div class="post-info">
+            <h2><a href="single.html">Cut Cloud Costs 30%: Practical Tips That Actually Work</a></h2>
+            <i class="far fa-user"> Mira</i>&nbsp;<i class="far fa-calendar"> 07/22/2025</i>
+            <p class="preview-text">Rightsizing, spot instances, and smarter storage tiers—tested tactics to keep performance up and bills down.</p>
+            <a href="single.html" class="btn read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1200&auto=format&fit=crop" alt="Code editor" class="post-image">
+          <div class="post-info">
+            <h2><a href="single.html">From Monolith to Modular: A Safe Refactor Strategy</a></h2>
+            <i class="far fa-user"> Arun</i>&nbsp;<i class="far fa-calendar"> 07/02/2025</i>
+            <p class="preview-text">Stabilize, slice, and ship—how to decouple legacy code without stalling feature delivery or angering customers.</p>
+            <a href="single.html" class="btn read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop" alt="Mobile app" class="post-image">
+          <div class="post-info">
+            <h2><a href="single.html">Designing for Speed: Mobile UX Patterns That Convert</a></h2>
+            <i class="far fa-user"> Leah</i>&nbsp;<i class="far fa-calendar"> 06/18/2025</i>
+            <p class="preview-text">Micro-interactions, fast feedback, and predictable flows that reduce friction and increase signups.</p>
+            <a href="single.html" class="btn read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?q=80&w=1200&auto=format&fit=crop" alt="Data visualization" class="post-image">
+          <div class="post-info">
+            <h2><a href="single.html">Metrics That Matter: Fewer Dashboards, Better Decisions</a></h2>
+            <i class="far fa-user"> Omar</i>&nbsp;<i class="far fa-calendar"> 05/30/2025</i>
+            <p class="preview-text">Choose leading indicators, ditch vanity metrics, and align measurement with outcomes, not activity.</p>
+            <a href="single.html" class="btn read-more">Read More</a>
+          </div>
+        </article>
+
+        <article class="post">
+          <img src="https://images.unsplash.com/photo-1523966211575-eb4a0173b2c4?q=80&w=1200&auto=format&fit=crop" alt="Remote work" class="post-image">
+          <div class="post-info">
+            <h2><a href="single.html">Managing Remote Teams: Clarity, Cadence, and Care</a></h2>
+            <i class="far fa-user"> Jin</i>&nbsp;<i class="far fa-calendar"> 05/08/2025</i>
+            <p class="preview-text">Set expectations, standardize rituals, and build trust—practical methods for distributed teams that deliver.</p>
+            <a href="single.html" class="btn read-more">Read More</a>
+          </div>
+        </article>
+      </main>
+
+      <!-- Right: Sidebar -->
+      <aside class="sidebar">
+        <section class="card">
+          <h3>About Me</h3>
+          <p>Hi, I am a beginner web developer learning to develop beautiful websites.</p>
+        </section>
+
+        <section class="card">
+          <h3>Recently Added Post's</h3>
+          <ul class="recent-list" id="recent-list">
+            <!-- JS will auto-populate recent posts based on main content titles -->
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Follow Me</h3>
+          <ul class="footer-links sidebar-links" id="follow-links">
+            <!-- JS duplicates Quick Links from footer -->
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>About BrainBridge</h3>
+        <p class="footer-about">BrainBridge is a modern publication exploring technology, startups, design, and the systems that power the future. Expect clear, practical insights—no noise.</p>
+        <div class="footer-socials" aria-label="Social links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links" id="quick-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Topics</a></li>
+          <li><a href="#">Write for Us</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Newsletter</h3>
+        <p class="footer-about">Get weekly insights in your inbox. No spam, unsubscribe anytime.</p>
+        <form class="newsletter" onsubmit="event.preventDefault(); alert('Subscribed! 🎉');">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-text">Copyright © 2025 BrainBridge</span>
+      <span class="footer-text">Designed by BrainBridge Team</span>
+    </div>
+  </footer>
+
+  <!-- JS (Libraries) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="webfun.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+  background: #f4ffee;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+    "header   header   header"
+    "sidebar  content1 content1"
+    "sidebar  content2 content3"
+    "footer   footer   footer";
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: auto 1.2fr 1fr auto;
+  gap: 16px;
+  border: 2px solid #222;
+  padding: 14px;
+  margin: 20px;
+  background: #edffe6;
+}
+
+.header {
+  grid-area: header;
+  background: #2cff47;
+  border: 1px solid #222;
+  text-align: center;
+  padding: 24px 10px;
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #2cff47;
+  border: 1px solid #222;
+  text-align: center;
+  padding: 45px 6px;
+}
+
+.content1 {
+  grid-area: content1;
+  background: #2cff47;
+  border: 1px solid #222;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.content2 {
+  grid-area: content2;
+  background: #2cff47;
+  border: 1px solid #222;
+  text-align: center;
+  padding: 35px 10px;
+}
+
+.content3 {
+  grid-area: content3;
+  background: #2cff47;
+  border: 1px solid #222;
+  text-align: center;
+  padding: 35px 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background: #2cff47;
+  border: 1px solid #222;
+  text-align: center;
+  padding: 20px 10px;
+}
