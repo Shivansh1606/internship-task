@@ -1,0 +1,3 @@
+[submodule "main_web_page"]
+	path = main_web_page
+	url = https://github.com/Shivansh1606/main_web_page.git
